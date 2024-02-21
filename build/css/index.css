@@ -64,7 +64,8 @@ a{
 }
 
 .h1Video {
-    padding-top: 10rem;
+    padding-top: 15rem;
+    padding-bottom: 2rem;
     font-size: 5rem;
 }
 
@@ -209,6 +210,7 @@ body.body-scroll{
     .h1Video {
         margin-top: 2rem;
         font-size: 2.5rem;
+        padding-top: 12rem;
     }
 
     .pVideo {
