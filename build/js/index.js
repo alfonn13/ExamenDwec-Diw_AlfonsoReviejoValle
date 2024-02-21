@@ -12,7 +12,6 @@ function iniciarApp() {
 
 }
 
-
 /*Barra de navegacion fija cuando pasemos la seccion de video*/
 function navegacionFija() {
     const barra = document.querySelector(".header");
@@ -27,11 +26,11 @@ function navegacionFija() {
         video.getBoundingClientRect().bottom < heightBarra &&
         window.innerWidth >= 768
       ) {
-        barra.classList.add("fijo");
+        barra.classList.add("fijado");
         body.style.paddingTop = heightBarra + "px";
         body.classList.add("body-scroll");
       } else {
-        barra.classList.remove("fijo");
+        barra.classList.remove("fijado");
         body.style.paddingTop = 0;
         body.classList.remove("body-scroll");
       }
@@ -58,11 +57,10 @@ function crearGaleria() {
 }
 
 /*Funcion para las imagenes de la galeria*/
-
 function mostrarImagen(id) {
     const imagen = document.createElement("picture");
     imagen.innerHTML = `
-  <source srcset="build/img/big/${id}.jpg" type="image/jpeg">
+  <source srcset="build/img/big/${id}.jpg" type="image/jpg">
   <source srcset="build/img/big${id}.webp" type="image/webp">
   <img loading="lazy" width=800" height="550" src="build/img/${id}.jpg" alt="Imagen Galeria" class="imagenModal">
       `;

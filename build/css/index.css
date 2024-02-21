@@ -36,6 +36,11 @@ a{
     padding-left: 2rem;
 }
 
+/*.fijado{
+
+}
+*/
+
 /*Video*/
 
 .video{
@@ -76,7 +81,7 @@ video{
 
 /*Galeria de Imagenes*/
 .galeriaContenedor{
-    padding-left: 2.5rem;
+    
     padding-bottom: 3rem;
 }
 
@@ -84,6 +89,7 @@ video{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
+    padding-left: 2.5rem;
 }
 
 .overlayGaleria {
@@ -141,6 +147,108 @@ body.body-scroll{
     padding: 2rem;
     text-align: center;
 }
+
+/*Medias*/
+@media (max-width:768px) {
+    .header.fijo {
+        left: 0;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0.1rem 0.2rem 0.3rem #333;
+    }
+
+    .galeriaImagenes{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .h3Galeria{
+        font-size: 2rem;
+    }
+
+    .imagenGaleria{
+        width: 300px;
+        height: 200px;
+    }
+
+    .imagenModal{
+        width: 600px;
+        height: 480px;
+    }
+
+    .h1Video{
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .pVideo{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:468px){
+    .galeriaImagenes{
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 50px;
+    }
+
+    .h3Galeria{
+        font-size: 1.5rem;
+    }
+
+    .imagenGaleria {
+        width: 280px;
+        height: 180px;
+    }
+
+    .imagenModal {
+        width: 300px;
+        height: 240px;
+    }
+
+    .h1Video {
+        margin-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .pVideo {
+        font-size: 1.5rem;
+    }
+}
+
+@media (width=820px){
+
+    .galeriaImagenes{
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 4rem;
+    }
+    .imagenGaleria{
+        width: 300px;
+        height: 200px;
+    }
+
+    .imagenModal{
+        width: 600px;
+        height: 440px;
+    }
+
+    .h1Video {
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .pVideo {
+        font-size: 2rem;
+    }
+}
+
+@media (width=430px){
+    .galeriaImagenes{
+        padding-right:400px;
+    }
+}
+
+
 
 
 
