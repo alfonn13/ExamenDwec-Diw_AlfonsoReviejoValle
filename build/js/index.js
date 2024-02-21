@@ -1,3 +1,8 @@
+/*
+Alfonso Reviejo Valle
+https://github.com/alfonn13/ExamenDwec-Diw_AlfonsoReviejoValle
+*/
+
 document.addEventListener("DOMContentLoaded", function () {
     iniciarApp();
 });
