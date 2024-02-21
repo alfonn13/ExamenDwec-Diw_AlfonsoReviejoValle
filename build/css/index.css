@@ -36,10 +36,21 @@ a{
     padding-left: 2rem;
 }
 
-/*.fijado{
-
+.logo:hover{
+    cursor: pointer;
 }
-*/
+
+.fijado{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #dcdcdc;
+}
+
 
 /*Video*/
 
@@ -82,7 +93,6 @@ video{
 
 /*Galeria de Imagenes*/
 .galeriaContenedor{
-    
     padding-bottom: 3rem;
 }
 
@@ -146,12 +156,13 @@ body.body-scroll{
 .site-footer{
     background-color: #dcdcdc;
     padding: 2rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
 /*Medias*/
 @media (max-width:768px) {
-    .header.fijo {
+    .header.fijado {
         left: 0;
         top: 0;
         position: fixed;
@@ -185,6 +196,10 @@ body.body-scroll{
     .pVideo{
         font-size: 1.5rem;
     }
+
+    .site-footer{
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width:468px){
@@ -192,6 +207,10 @@ body.body-scroll{
         grid-template-columns: repeat(1,1fr);
         padding-left: 50px;
     }
+
+   .contenido-header{
+        width: 230px;
+   }
 
     .h3Galeria{
         font-size: 1.5rem;
@@ -215,6 +234,10 @@ body.body-scroll{
 
     .pVideo {
         font-size: 1.5rem;
+    }
+
+    .site-footer{
+        font-size: 1.2rem;
     }
 }
 
@@ -242,13 +265,12 @@ body.body-scroll{
     .pVideo {
         font-size: 2rem;
     }
-}
 
-@media (width=430px){
-    .galeriaImagenes{
-        padding-right:400px;
+    .site-footer{
+        font-size: 1.5rem;
     }
 }
+
 
 
 
